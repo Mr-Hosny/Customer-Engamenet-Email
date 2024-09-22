@@ -1,0 +1,318 @@
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans';
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+.btn {
+  background-color: rgb(68, 71, 209);
+  padding: 5px 25px;
+  border-radius: 2px;
+  font-size: 20px;
+  color: white;
+  font-family: 'Josefin Sans';
+  transition: all 0.2s linear;
+}
+
+.btn:hover {
+  background-color: rgba(63, 96, 204, 0.795);
+}
+
+
+/* style setting */
+
+section {
+  padding: 1.75rem;
+}
+
+.section-content {
+  background-color: rgb(253, 251, 217);
+  padding: 6rem 4rem;
+  text-align: center;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+.header-content h1 {
+  font-family: Bricolage Grotesque;
+  color: rgb(85, 82, 53);
+  text-align: start;
+  font-size: 4rem;
+}
+
+.main-img {
+  width: 100%;
+}
+
+.section-content p {
+  text-align: center;
+  width: 60%;
+  margin: 2rem auto;
+  font-size: 1.25rem;
+}
+
+
+.learn-more {
+  background-color: rgb(216, 213, 65);
+}
+
+.learn-more:hover {
+  background-color: rgb(152, 161, 22);
+}
+
+footer {
+  background-color: rgb(30, 105, 218);
+  padding: 2rem;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.media-list,
+.links-list {
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-list li a {
+  color: white;
+  font-size: 2.75rem;
+  transition: all 0.2s linear;
+}
+
+.media-list li a:hover {
+  color: rgb(161, 196, 226);
+}
+
+.links-list li {
+  margin: 2rem 0;
+}
+
+.links-list li a {
+  color: white;
+  transition: all 0.2s linear;
+}
+
+.links-list li a:hover {
+  color: rgb(161, 196, 226);
+}
+
+.border-around {
+  border-left: 2px solid;
+  border-right: 2px solid;
+  padding: 0 0.75rem;
+}
+
+footer p {
+  text-align: center;
+  width: 60%;
+  margin: 2rem auto;
+  font-size: 1.75rem;
+}
+
+@media screen and (max-width: 938px) {
+  .section-content {
+    padding: 4rem 3rem;
+  }
+
+  .header-content h1 {
+    font-size: 3.75rem;
+  }
+
+  .section-content p {
+    width: 80%;
+    margin: 2rem auto;
+    font-size: 1.25rem;
+  }
+
+}
+
+@media screen and (max-width: 840px) {
+  .section-content {
+    padding: 2.785rem 2rem;
+  }
+
+  .header-content h1 {
+    font-size: 3rem;
+  }
+
+  footer p {
+    margin: 2rem auto;
+    font-size: 1.785rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 1.45rem;
+  }
+  .section-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .header-content h1 {
+    font-size: 2.25rem;
+  }
+
+  .section-content p {
+    margin: 1.785rem auto;
+    font-size: 1rem;
+  }
+
+  .learn-more {
+    font-size: 1rem;
+    padding: 4px 8px;
+  }
+
+  footer {
+    padding: 1.75rem;
+  }
+
+  .media-list li a {
+    font-size: 2rem;
+  }
+
+  .links-list li {
+    margin: 0.5rem;
+  }
+
+  .links-list li a {
+    font-size: 0.75rem;
+  }
+
+  footer p {
+    margin: 1rem auto;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  section {
+    padding: 1rem;
+  }
+  .header-content h1 {
+    font-size: 1.65rem;
+  }
+
+  .section-content p {
+    margin: 1.5rem auto;
+    font-size: 0.65rem;
+  }
+  .header-content {
+    gap: 0.65rem;
+    padding-bottom: 1.75rem;
+  }
+
+  footer {
+    padding: 1.25rem;
+  }
+
+  .media-list li a {
+    font-size: 1.25rem;
+  }
+
+  .links-list li {
+    margin: 0.25rem;
+  }
+
+  .links-list li a {
+    font-size: 0.5rem;
+  }
+
+  footer p {
+    margin: 1rem auto;
+    font-size: 0.75rem;
+  }
+
+}
